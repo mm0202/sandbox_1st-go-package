@@ -16,7 +16,8 @@ jobs:
 
       - run: ls
 
-      - run: go test -v github.com/mm0202/sandbox_1st-go-package
+      - run: go test -v
+        working-directory: github.com/mm0202/sandbox_1st-go-package
 
       - run: go get github.com/mm0202/sandbox_1st-go-package
 
