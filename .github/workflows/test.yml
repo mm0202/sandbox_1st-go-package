@@ -14,10 +14,10 @@ jobs:
         with:
           go-version: 1.13
 
-      - run: go test go
+      - run: go test -v
 
       - run: go get github.com/mm0202/sandbox_1st-go-package
-      
+
       - run: sandbox_1st-go-package
 
       - name: notify to slack
