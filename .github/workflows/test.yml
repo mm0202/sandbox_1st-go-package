@@ -16,10 +16,10 @@ jobs:
 
       - run: go test -v
         # working-directory: packages
+        
+      - run: go get github.com/mm0202/sandbox_1st-go-package
 
-      - run: |
-          go get github.com/mm0202/sandbox_1st-go-package
-          sandbox_1st-go-package
+      - run: ~/go/bin/sandbox_1st-go-package
 
       - name: notify to slack
         uses: mm0202/action_slack-notify@master
